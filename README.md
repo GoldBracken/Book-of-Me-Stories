@@ -70,7 +70,6 @@ Passwords are stored in plain text for demo purposes. In a production applicatio
 ### Future Enhancements
 
 To enable server-side persistence, you would need:
-1. A backend API (Node.js, Python, etc.)
-2. File write permissions on the server
-3. Proper authentication and authorization
-4. Database integration for better performance
+1. File write permissions on the server
+2. Proper authentication and authorization
+3. Database integration for better performance
