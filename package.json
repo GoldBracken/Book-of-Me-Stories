@@ -1,0 +1,12 @@
+{
+  "name": "book-of-me-stories",
+  "version": "1.0.0",
+  "description": "Story app with JSON persistence via Node backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

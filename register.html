@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register — Book of Me Stories</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-link">
+            <img src="img/logo.jpg" alt="Book of Me Stories logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button onclick="dropMenu()" class="dropbtn">Menu</button>
+                    <div id="drop" class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="myStories.html">My Stories</a>
+                    </div>
+                </div>
+                <a href="storyCreate.html">Create a Story</a>
+            </nav>
+            <div id="user-nav">
+                <!-- User nav will be populated by JavaScript -->
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="story-create">
+            <h1>Register</h1>
+            <form id="registerForm" class="story-form" onsubmit="registerUser(event)">
+                <div class="field-row">
+                    <label>Full Name<input name="name" required></label>
+                </div>
+
+                <div class="field-row">
+                    <label>Email<input name="email" type="email" required></label>
+                </div>
+
+                <div class="field-row">
+                    <label>Password<input name="password" type="password" required minlength="6"></label>
+                </div>
+
+                <div class="field-row">
+                    <label>Confirm Password<input name="confirmPassword" type="password" required></label>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="cta">Register</button>
+                </div>
+                <div id="registerMsg" aria-live="polite" style="color:red;margin-top:6px"></div>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <img src="img/logo.jpg" alt="Book of Me Stories logo" class="logo">
+            </div>
+            <div class="footer-col">
+                <h3>Book of Me Stories</h3>
+                <p>Share memories and stories with family — now and for future generations.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="storyCreate.html">Create a Story</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="myStories.html">My Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:bra25005@byui.edu">bra25005@byui.edu</a></p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <p>
+                    <a href="#" class="footer-social">Twitter</a><br>
+                    <a href="#" class="footer-social">Facebook</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© 2026 Book of Me Stories — All rights reserved.</small>
+            <a href="#top" class="back-to-top">Back to top</a>
+        </div>
+    </footer>
+</body>
+</html>

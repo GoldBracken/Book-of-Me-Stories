@@ -1,23 +1,117 @@
+<!--
+
+Author: Austin Brackney
+Date:
+
+Sources/Works Cited:
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <title>Book of Me Stories</title>
+        <script src="main.js"></script>
     </head>
 
     <body>
 
         <header>
-            <nav class="row">
-                <a href="index.html" class="col text-center">Home</a>
-                <a href="index.html" class="col text-center">Home</a>
-                <a href="index.html" class="col text-center">Home</a>
-            </nav>
+            <div class="header-link">
+                <img src="img/logo.jpg" alt="Book of Me Stories logo" class="logo">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <div class="dropdown">
+                        <button onclick="dropMenu()" class="dropbtn">Menu</button>
+                        <div id="drop" class="dropdown-content">
+                            <a href="gallery.html">Gallery</a>
+                            <a href="myStories.html">My Stories</a>
+                        </div>
+                    </div>
+                    <a href="storyCreate.html">Create a Story</a>
+                </nav>
+                <div id="user-nav">
+                    
+                </div>
+            </div>
         </header>
+
+        <div class="main">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">What is Book of Me Stories?</h1>
+                        <p class="hero-p">
+                            Book of Me Stories is a website built to share your stories, your conversion,
+                            and your experiences with family. Now and for future generations.
+                        </p>
+                        <a href="storyCreate.html" class="hero-link">Start Now!</a>
+                    </div>
+                    <img src="img/feel-the-prints.jpeg" alt="Christ surrounded by Nephites feeling the prints in his hands and feet" class="hero-img">
+                </div>
+            </div>
+            <div class="get-started">
+                <div class="get-started-content">
+                    <h2 class="section-title">How to get started</h2>
+                    <ol class="steps-list">
+                        <li>Create your account to get started</li>
+                        <li>Write and share your personal stories</li>
+                        <li>View and manage your story collection</li>
+                        <li>Share memories with your family</li>
+                    </ol>
+                </div>
+            </div>
+                <div class="create-story">
+                <h2 class="section-title">Create your first story in 4 easy steps</h2>
+                <ol class="steps-list">
+                        <li>Create an account or sign in.</li>
+                        <li>Click "Create a Story" from the menu.</li>
+                        <li>Fill in your story details and save.</li>
+                        <li>Share with family or keep it private.</li>
+                    </ol>
+                    <a href="storyCreate.html" class="cta">Create your first story</a>
+                </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <img src="img/logo.jpg" alt="Book of Me Stories logo" class="logo">
+                </div>
+                <div class="footer-col">
+                    <h3>Book of Me Stories</h3>
+                    <p>Share memories and stories with family — now and for future generations.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="storyCreate.html">Create a Story</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="myStories.html">My Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:bra25005@byui.edu">bra25005@byui.edu</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow</h4>
+                    <p>
+                        <a href="#" class="footer-social">Twitter</a><br>
+                        <a href="#" class="footer-social">Facebook</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <small>© 2026 Book of Me Stories — All rights reserved.</small>
+                <a href="#top" class="back-to-top">Back to top</a>
+            </div>
+        </footer>
 
     </body>
 
