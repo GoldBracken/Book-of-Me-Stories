@@ -110,12 +110,7 @@ Handles user login via form submission
 - **Fallback**: `localStorage` (for offline functionality)
 
 ## Security Notes
-⚠️ **Warning**: This implementation stores passwords in plain text. For production, implement:
-- Password hashing (bcrypt recommended)
-- JWT tokens for session management
-- HTTPS encryption
-- Input validation and sanitization
-- Rate limiting on auth endpoints
+- **Warning**: This implementation stores passwords in plain text.
 
 ## File Locations
 - Backend: `data/users.json`
