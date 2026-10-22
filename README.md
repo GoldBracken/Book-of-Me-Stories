@@ -66,10 +66,3 @@ data/
 ### Security Note
 
 Passwords are stored in plain text for demo purposes. In a production application, passwords should be properly hashed using bcrypt or similar.
-
-### Future Enhancements
-
-To enable server-side persistence, you would need:
-1. File write permissions on the server
-2. Proper authentication and authorization
-3. Database integration for better performance
